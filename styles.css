@@ -114,7 +114,7 @@ hr{
     }
 }
 
-@media (width< 800px) {
+@media (width< 840px) {
     nav ul{
         display: none;
         flex-direction: column;
@@ -457,7 +457,14 @@ button:hover{
     justify-content: center;
     align-items: center;
 }
+.services button{
+    color: #A6A997;
+    border: 2px solid #A6A997;
+}
+.services button:hover{
+    background-color: hsl(70, 9%, 33%);
 
+}
 @media (width< 900px) {
    
     .services h2{ 
@@ -607,10 +614,16 @@ form{
         width: 300px;
     }
     .contact{
-        padding-top: 0;
+        padding-top: 2rem;
+    }
+    .contact p {
+        width: 320px;
     }
     .contact h4{
         width: 90%;
+    }
+    .contact-info{
+        height: 300px;
     }
 }  
 /* FOOTER */
@@ -631,4 +644,188 @@ form{
 }
 .footer i {
     color: white;
+}
+
+/* BIOGRAFIKO */
+
+/* HERO SECTION */
+.bio-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bio-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 100%;
+    background-image: url(/images/hero-background.png);
+    background-size:cover;
+    background-attachment: fixed; 
+    background-position: center;
+}
+.bio-container{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 2rem;
+}
+.bio-right p{
+    max-width: 600px;
+    line-height: 1.5rem;
+    padding: 0 2rem;
+}
+.bio h2{
+    color: #A6A997;
+    margin-bottom: 2rem;
+}
+.bio-left{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.bio img{
+    width: 300px;
+}
+.bio-hero-content{
+    color: white;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bio .hero-button{
+    color: #A6A997;
+    border: 2px solid #A6A997;
+}
+.bio p{
+    max-width: 800px;
+}
+.bio h6{
+    font-size: 1.1rem;
+    font-weight: 400;
+    max-width: 600px;
+}
+.studies{
+    display: flex;
+    flex-direction: column;
+}
+.bio span{
+    font-weight: 600;
+}
+.studies-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background-color: #F8F8F6;
+    padding: 3rem 0;
+}
+
+@media (width< 720px) {
+    .bio-hero{
+        height: 50vh;
+    }
+    .bio-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .bio p{
+        max-width: 480px;
+        text-align: center;
+    }
+    .bio-right{
+        margin-bottom: 2rem;
+    }
+    .studies{
+        padding: 0 3rem;
+        max-width: 480px;
+    }
+}
+@media (width<440px) {
+    .bio-content{
+        text-align: center;
+    }
+    .bio-content button{
+        margin-bottom: 2rem;
+    }
+    .studies{
+        text-align: start;
+    }
+}
+
+/* CONTACT PAGE*/
+
+.contact-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+    background-image: url(/images/contact-hero.png);
+    background-size:cover;
+    background-position: center;
+}
+.contact-hero h2{
+    color: white;
+    font-weight: 200;
+}
+
+
+/* SERVICES PAGE */
+.services-page{
+    padding: 2rem 0;
+    background-color: #F8F8F6;
+    width: 100%;
+}
+.services-page button{
+    color: #A6A997;
+    border: 2px solid #A6A997;
+}
+
+.services-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services-page h2{
+    color: #A6A997;
+    margin-bottom: 2rem;
+}
+.services-page h4{
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+}
+.tools{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.services-page .bio-container{
+    max-width: 660px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.2rem;
+}
+.services-page img{
+    width: 6rem;
+}
+
+@media (width< 820px) {
+    .services-content{
+        text-align: center;
+        padding: 0 3rem;
+    }
+    .tools{
+        text-align: start;
+        margin-bottom: 2rem;
+    }
 }
