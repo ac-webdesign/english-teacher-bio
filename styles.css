@@ -45,7 +45,9 @@ body{
     flex-direction: column;
     align-items: center;
 }
-
+header{
+    width: 100%;
+}
 .header{
     width: 100%;
     height: 100px;
@@ -98,9 +100,13 @@ nav a:hover{
     right: 4rem;
     top: 2rem;
     z-index: 9999;
+    transition: all ease 0.7s;
   }
 .nav-footer{
     display: none;
+}
+.nav-footer .social-icons{
+    margin-bottom: 2rem;
 }
 hr{
     display: none;
@@ -173,8 +179,10 @@ hr{
     }
     .header{
         display: flex;
+        width: 100%;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
+        transition: all ease 0.7s;
     }
     .burger-menu{
         display: block;
@@ -183,7 +191,7 @@ hr{
         right: 2rem;
     }
     .logo{
-        height: 3rem;
+        height: 3.2rem;
     }
 }
 @media (width< 440px) {
@@ -649,28 +657,18 @@ form{
 /* BIOGRAFIKO */
 
 /* HERO SECTION */
+
 .bio-content{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.bio-hero{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 40vh;
-    width: 100%;
-    background-image: url(/images/hero-background.png);
-    background-size:cover;
-    background-attachment: fixed; 
-    background-position: center;
-}
+
 .bio-container{
     display: flex;
     align-items: center;
-    gap: 4rem;
+    gap: 3rem;
     margin-bottom: 2rem;
 }
 .bio-right p{
@@ -689,6 +687,7 @@ form{
 }
 .bio img{
     width: 300px;
+    margin-left: 1rem;
 }
 .bio-hero-content{
     color: white;
@@ -720,18 +719,19 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     background-color: #F8F8F6;
     padding: 3rem 0;
 }
 
-@media (width< 720px) {
+@media (width< 800px) {
     .bio-hero{
         height: 50vh;
     }
     .bio-container{
         display: flex;
         flex-direction: column;
+        
     }
     .bio p{
         max-width: 480px;
@@ -744,6 +744,9 @@ form{
         padding: 0 3rem;
         max-width: 480px;
     }
+    .bio img{
+        margin-left: 0;
+    }
 }
 @media (width<440px) {
     .bio-content{
@@ -755,6 +758,7 @@ form{
     .studies{
         text-align: start;
     }
+    
 }
 
 /* CONTACT PAGE*/
